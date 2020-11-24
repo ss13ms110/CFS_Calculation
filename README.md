@@ -24,13 +24,6 @@ A --> E("example <br/> (example data to test codes)");
 NRC-I6-1_CFS
 |   README.md
 |
-|___data
-|   |___workingData
-|   |   catalog.dat
-|   |   events.txt
-|   |
-|   |   |___srcmod
-|
 |___example
 |   |___figs
 |   |   |___stress
@@ -93,10 +86,7 @@ NRC-I6-1_CFS
 
 **NRC-I6-1_CFS:** Parent directory
 
-* **rawData:** Directory to store ISC Catalog in pickle format, which can be downloaded from ISC website.
-
-* **data:** contains all (raw and processed) data  [This is where real work can be done]    
-|---**workingData:** contains pre-processed data and results  
+* **rawData:** Directory (can be created in parent directory) to store ISC Catalog in pickle format, which can be downloaded from ISC website. 
 
 * **example:** an example folder where all the codes can be tested  
 |---**workingData:** contains pre-processed data and results  
