@@ -1,0 +1,56 @@
+#=============================================================================
+# This is input file of FORTRAN program "psgrn2019" for computing responses
+# (Green's functions) of a multi-layered viscoelastic halfspace to point
+# dislocation sources buried at different depths. All results will be stored in
+# the given directory and provide the necessary data base for the program
+# "pscmp2019" for computing time-dependent deformation, geoid and gravity changes
+# induced by an earthquake with extended fault planes via linear superposition.
+#
+# written by Rongjiang Wang
+# Helmholtz Centre Potsdam
+# GFZ German Research Centre for Geosciences
+# e-mail: wang@gfz-potsdam.de
+#
+# Last modified: Potsdam, Feb, 2019
+#
+# PARAMETERS FOR SOURCE-OBSERVATION CONFIGURATIONS
+# ================================================
+      37.5     1
+   61     0.0   600.0   4.0
+   15     0.0    30.0
+# ================================================
+#
+# PARAMETERS FOR TIME SAMPLING
+# ============================
+     1      1.0
+# ============================
+#
+# PARAMETERS FOR WAVENUMBER INTEGRATION
+# =====================================
+  0.05
+  1.00
+# =====================================
+#
+# PARAMETERS FOR OUTPUT FILES
+# ===========================
+'./workingData/psgrn+pscmp_out/tmp_out/'
+'uz'  'ur'  'ut'
+'szz' 'srr' 'stt' 'szr' 'srt' 'stz'
+'tr'  'tt'  'rot' 'gd'  'gr'
+# ===========================
+#
+#------------------------------------------------------------------------------
+9             |int: no_model_lines;
+#------------------------------------------------------------------------------
+# no  depth[km]  vp[km/s]  vs[km/s]  rho[kg/m^3] etak[Pa*s] etam[Pa*s] alpha
+#------------------------------------------------------------------------------
+1       0.0       3.2500    1.6500     1650.0     0.0E+00    0.0E+00   1.000
+2       0.7       3.2500    1.6500     1650.0     0.0E+00    0.0E+00   1.000
+3       0.7       6.0000    3.5000     3500.0     0.0E+00    0.0E+00   1.000
+4      15.0       6.0000    3.5000     3500.0     0.0E+00    0.0E+00   1.000
+5      15.0       6.6000    3.7000     3700.0     0.0E+00    0.0E+00   1.000
+6      24.0       6.6000    3.7000     3700.0     0.0E+00    0.0E+00   1.000
+7      24.0       7.2000    4.0000     4000.0     0.0E+00    0.0E+00   1.000
+8      35.0       7.2000    4.0000     4000.0     0.0E+00    0.0E+00   1.000
+9      35.0       8.0000    4.6000     3300.0     1.0E+17    1.0E+19   0.500
+#=======================end of input===========================================
